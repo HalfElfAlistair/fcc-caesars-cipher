@@ -1,7 +1,8 @@
-function rot13(str) {
+function rot13Convert() {
+  let cipherString = document.getElementById("string").value;
   let standardAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
   let rot13Alphabet = "NOPQRSTUVWXYZABCDEFGHIJKLM".split("");
-  let stringToDecode = str.split("");
+  let stringToDecode = cipherString.toUpperCase().split("");
   let newArray = [];
 
 for (let i = 0; i < stringToDecode.length; i++) {
@@ -13,5 +14,7 @@ for (let i = 0; i < stringToDecode.length; i++) {
     newArray.push(standardAlphabet[alphaIndex]);
   }
 }
-  return newArray.join("");
+  let result = newArray.join("");
+
+  document.getElementById("translated-cipher").innerHTML = result;
 }
