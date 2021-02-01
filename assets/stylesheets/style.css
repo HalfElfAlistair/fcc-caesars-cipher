@@ -3,5 +3,20 @@ body {
 	overflow-x: hidden;
 	margin: 0;
     line-height: 1.6;
-    background-color: #F9FAF8;
+    background-color: #09BC8A;
+}
+
+h1 {
+    color: #0D1821;
+}
+
+p {
+    color: #1C262E;
+}
+
+.introduction,
+.conversion-section {
+    background-color: #F0F4EF;
+    margin: 5%;
+    padding: 5%;
 }

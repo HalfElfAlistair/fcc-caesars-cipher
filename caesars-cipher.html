@@ -11,31 +11,36 @@
 			}
     </style>
     <script src="caesars-cipher.js" type="text/javascript" charset="utf-8"></script>
-    </head>
-    <body>
-      <div class="conversion-section">
-        <h1>Caesars-Cipher</h1>
-        <p>This project was completed as part of the JavaScript Algorithms and Data Structures course, found at <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener"><b>freeCodeCamp</b></a><br><br>Enter a <a href="https://en.wikipedia.org/wiki/ROT13" target="_blank" rel="noopener"><b>ROT13</b></a> cipher and click submit to see it translated.</p>
-        <p>Stuck for ideas? Try some of the following suggestions and see what they translate to...</p>
-        <ul>
-          <li>Uryyb Jbeyq!</li>
-          <li>Onol Lbqn vf gur phgrfg!</li>
-          <li>Lbh ner grnevat zr ncneg Yvfn!!!</li>
-          <li>Pbqvat vf sha!</li>
-          <li>V ubcr lbh'er rawblvat zl Tvg ercbf!</li>
-        </ul>
-        <form>
-            <input type="text" id="string" value="Nyvfgnve znqr guvf.">
-            <input value="Submit" onclick="rot13Convert()" type="button" id="submit-button" class="sub-button">
-        </form>
+  </head>
+  <body>
+    <div class="introduction">
+      <h1>Caesars-Cipher</h1>
+      <p>This project was completed as part of the JavaScript Algorithms and Data Structures course, found at <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener"><b>freeCodeCamp</b></a>.</p>
+    </div>
+    <div class="conversion-section">
+      <h2>ROT13 to Standard English</h2>
+      <p>Enter a <a href="https://en.wikipedia.org/wiki/ROT13" target="_blank" rel="noopener"><b>ROT13</b></a> cipher and click submit to see it translated.<br><br>Stuck for ideas? Try some of the following suggestions and see what they translate to...</p>
+      <ul>
+        <li>Uryyb Jbeyq!</li>
+        <li>Onol Lbqn vf gur phgrfg!</li>
+        <li>Lbh ner grnevat zr ncneg Yvfn!!!</li>
+        <li>Pbqvat vf sha!</li>
+        <li>V ubcr lbh'er rawblvat zl Tvg ercbf!</li>
+      </ul>
+      <form>
+        <input type="text" id="string" value="Nyvfgnve znqr guvf.">
+        <input value="Submit" onclick="rot13Convert()" type="button" id="submit-button" class="sub-button">
+      </form>
         <p id="translated-cipher"></p>
-      </div>
-      <div class="reverse-conversion-section">
-        <h3>Enter a regular phrase and click submit to see it translated into ROT13.</h3>
-        <form>
-            <input type="text" id="regular-string" value="Alistair made this.">
-            <input value="Submit" onclick="reverseRot13Convert()" type="button" id="submit-button" class="sub-button">
-        </form>
+    </div>
+    <div class="conversion-section">
+      <h2>Standard English to ROT13</h2>
+      <p>Enter a regular phrase and click submit to see it translated into ROT13.</p>
+      <form>
+        <input type="text" id="regular-string" value="Alistair made this.">
+        <input value="Submit" onclick="reverseRot13Convert()" type="button" id="submit-button" class="sub-button">
+      </form>
         <p id="translated-text"></p>
-      </div>
-    </body>
+    </div>
+  </body>
+</html>
