@@ -14,6 +14,16 @@ p {
     color: #1C262E;
 }
 
+a {
+    color: #0D1821;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1C262E;
+    text-decoration: underline;
+}
+
 .introduction,
 .conversion-section {
     background-color: #F0F4EF;
@@ -26,9 +36,9 @@ p {
 #regular-string,
 #string {
     font-size: 15px;
-    width: 100%;
+    width: 99%;
     margin-bottom: 5%;
-    padding: 2% 0;
+    padding: 2% 0 2% 1%;
     border-radius: 3px;
 }
 
